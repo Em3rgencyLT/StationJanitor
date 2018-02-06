@@ -9,8 +9,8 @@ using System.Xml;
 
 namespace StationJanitor.Controllers
 {
-    [CliController("max", "Allows the filling of Fabricators etc.")]
-    class IngotController
+    [CliController("stack", "Allows the filling of Fabricators etc.")]
+    class StackController
     {
         [CliCommand("Ingots", "Fills all printers with 10kg of Reagents")]
         public static void MaxIngots(string pathToWorldXml)
