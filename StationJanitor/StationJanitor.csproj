@@ -32,8 +32,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CommandAndConquer.CLI, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\WMZ.CommandAndConquer.CLI.2.0.0\lib\net452\CommandAndConquer.CLI.dll</HintPath>
+    <Reference Include="CommandAndConquer.CLI, Version=2.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\WMZ.CommandAndConquer.CLI.2.2.0\lib\net45\CommandAndConquer.CLI.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -46,6 +46,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\MainController.cs" />
+    <Compile Include="Controllers\ReagentController.cs" />
+    <Compile Include="Controllers\WorldReader.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

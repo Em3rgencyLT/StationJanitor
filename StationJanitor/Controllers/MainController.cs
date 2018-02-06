@@ -17,7 +17,9 @@ namespace StationJanitor.Controllers
 
 		[CliCommand("removeTrash", "Removes all objects lying on the ground")]
 		public static void MethodExample(string pathToWorldXml)
+
 		{
+
 			string originalXmlPath = pathToWorldXml + "\\world.xml";
 			if(!File.Exists(originalXmlPath))
 			{
