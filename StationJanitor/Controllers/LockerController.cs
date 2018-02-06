@@ -45,7 +45,7 @@ namespace StationJanitor.Controllers
                     if (CustomName.StartsWith("Locker|"))
 
                     {
-                        _RemoveLockerContent(ReferenceID, Things);
+                        // _RemoveLockerContent(ReferenceID, Things);
                     }
 
                 }
