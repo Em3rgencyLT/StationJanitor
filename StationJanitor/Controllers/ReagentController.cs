@@ -74,7 +74,7 @@ namespace StationJanitor.Controllers
                 "Reagents.Nickel",
                 "Reagents.Electrum",
                 "Reagents.Invar",
-                "Reagents.Constatan",
+                "Reagents.Constantan",
                 "Reagents.Lead",
                 "Reagents.Solder",
                 "Reagents.Silicon"
