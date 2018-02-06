@@ -45,6 +45,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\IngotController.cs" />
+    <Compile Include="Controllers\LockerController.cs" />
     <Compile Include="Controllers\MainController.cs" />
     <Compile Include="Controllers\ReagentController.cs" />
     <Compile Include="Controllers\WorldReader.cs" />
