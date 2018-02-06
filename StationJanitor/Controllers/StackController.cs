@@ -9,7 +9,7 @@ using System.Xml;
 
 namespace StationJanitor.Controllers
 {
-    [CliController("stack", "Make the stacks max already")]
+    [CliController("stack", "Make the stacks max already ( Commands: All, Ingots, Ores, Ice )")]
     class StackController
     {
         [CliCommand("All", "Max out everything ( Ingots, Ores, Ice )")]

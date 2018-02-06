@@ -11,10 +11,10 @@ namespace StationJanitor.Controllers
 
     // Still working on that
 {
-    [CliController("fill", "Allows the filling of Fabricators etc.")]
+    [CliController("lockers", "Allows the filling of Lockers ( Work in Progress )")]
     class LockerController
     {
-        [CliCommand("Lockers", "Fills all printers with 10kg of Reagents")]
+        [CliCommand("Lockers", "Fills all lockers based on their name")]
         public static void FillLockers(string pathToWorldXml)
         {
 

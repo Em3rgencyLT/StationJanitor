@@ -6,7 +6,7 @@ using CommandAndConquer.CLI.Attributes;
 
 namespace StationJanitor.Controllers
 {
-	[CliController("run", "The main (and currently only) command namespace.")]
+	[CliController("run", "The main (and currently only) command namespace ( Commands: removeTrash )")]
 	public static class MainController
 	{
 		//Don't remove these
