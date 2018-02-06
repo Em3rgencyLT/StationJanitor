@@ -9,7 +9,7 @@ using System.Xml;
 
 namespace StationJanitor.Controllers
 {
-    [CliController("fill", "Allows the filling of Fabricators etc.")]
+    [CliController("fill", "Allows the filling of Fabricators and Printers ( Commands: All )")]
     class ReagentController
     {
         //Don't remove these
@@ -18,7 +18,7 @@ namespace StationJanitor.Controllers
             DynamicCrate
         }
 
-        [CliCommand("Printers", "Fills all printers with 10kg of Reagents")]
+        [CliCommand("All", "Fills all Fabricators and Printers with 10kg of Reagents")]
         public static void FillPrinters(string pathToWorldXml)
         {
 
