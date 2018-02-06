@@ -8,5 +8,7 @@ namespace StationJanitor
 		{
 			Processor.ProcessArguments(args);
 		}
+
 	}
+
 }
