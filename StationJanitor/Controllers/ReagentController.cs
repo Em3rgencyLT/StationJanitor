@@ -74,7 +74,7 @@ namespace StationJanitor.Controllers
                 "Reagents.Nickel",
                 "Reagents.Electrum",
                 "Reagents.Invar",
-                "Reagents.Constatan",
+                "Reagents.Constantan",
                 "Reagents.Lead",
                 "Reagents.Solder",
                 "Reagents.Silicon"
@@ -99,7 +99,7 @@ namespace StationJanitor.Controllers
 
             NewReagent.AppendChild(NewTypeName);
 
-            XmlNode NewQuantity = NewReagent.OwnerDocument.CreateNode("element", "Quanitity", "");
+            XmlNode NewQuantity = NewReagent.OwnerDocument.CreateNode("element", "Quantity", "");
             NewQuantity.InnerText = string.Format("{0}", Quantity);
 
             NewReagent.AppendChild(NewQuantity);

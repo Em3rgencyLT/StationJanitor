@@ -79,9 +79,11 @@ namespace StationJanitor.Controllers
 
                 if (Thing.SelectSingleNode("PrefabName").InnerText.EndsWith("Ingot")) 
                 {
-                    Console.WriteLine("Changing StackSize " + Thing.SelectSingleNode("PrefabName").InnerText);
-                    Thing.SelectSingleNode("Quantity").InnerText = StackSize;
-
+                    if (Thing.SelectSingleNode("Quantity").InnerText != StackSize)
+                    {
+                        Console.WriteLine("Changing StackSize " + Thing.SelectSingleNode("PrefabName").InnerText);
+                        Thing.SelectSingleNode("Quantity").InnerText = StackSize;
+                    }
                 }
 
             }
@@ -106,9 +108,11 @@ namespace StationJanitor.Controllers
 
                 if (Ores.Contains(Thing.SelectSingleNode("PrefabName").InnerText))
                 {
-                    Console.WriteLine("Changing StackSize " + Thing.SelectSingleNode("PrefabName").InnerText);
-                    Thing.SelectSingleNode("Quantity").InnerText = StackSize;
-
+                    if (Thing.SelectSingleNode("Quantity").InnerText != StackSize)
+                    {
+                        Console.WriteLine("Changing StackSize " + Thing.SelectSingleNode("PrefabName").InnerText);
+                        Thing.SelectSingleNode("Quantity").InnerText = StackSize;
+                    }
                 }
 
             }
@@ -128,8 +132,11 @@ namespace StationJanitor.Controllers
 
                 if (Ices.Contains(Thing.SelectSingleNode("PrefabName").InnerText))
                 {
-                    Console.WriteLine("Changing StackSize " + Thing.SelectSingleNode("PrefabName").InnerText);
-                    Thing.SelectSingleNode("Quantity").InnerText = StackSize;
+                    if (Thing.SelectSingleNode("Quantity").InnerText != StackSize)
+                    {
+                        Console.WriteLine("Changing StackSize " + Thing.SelectSingleNode("PrefabName").InnerText);
+                        Thing.SelectSingleNode("Quantity").InnerText = StackSize;
+                    }
 
                 }
 
