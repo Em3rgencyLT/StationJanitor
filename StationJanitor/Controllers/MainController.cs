@@ -92,11 +92,10 @@ namespace StationJanitor.Controllers
                 if (!PrefabNames.Contains(thing.SelectSingleNode("PrefabName").InnerText))
                 {
                     PrefabNames.Add(thing.SelectSingleNode("PrefabName").InnerText);
-
                 }
 
                 //Skip things we don't want removed
-                if (Enum.IsDefined(typeof(Untouchables), prefab.InnerText))
+                if (Enum.IsDefined(typeof(Untouchables), prefab.InnerText) || thing.SelectSingleNode("PrefabName").InnerText.EndsWith("Ingot"))
                 {
                     continue;
                 }
